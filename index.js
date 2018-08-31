@@ -59,7 +59,7 @@ function removeFromCart(item) {
     }
     
   }
-  delete cart
+  return ""
 }
 
 function placeOrder(cardNumber) {
