@@ -22,10 +22,17 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var line = "In your cart, you have ";
   if (cart.isEmpty()){
-    return "Your shopping cart is empty."
+    return "Your shopping cart is empty.";
   } else {
-    
+    for (let i = 0; i<cart.length; i++){
+      if (i===0){
+        line += `${cart.item.itemName} at $${cart.item.itemPrice}`;
+      } else if (i === cart.length-1) {
+        line += `, and ${cart.item.itemName} at $${cart.item.itemPrice}.`;
+      }
+    }
   }
 }
 
