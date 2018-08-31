@@ -30,10 +30,11 @@ function viewCart() {
       if (i===0){
         line += `${cart[i].itemName} at $${cart[i].itemPrice}`;
       } else if (i === cart.length-1) {
-        line += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+        line += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
       } else {
         line += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
+      line += ".";
     }
   }
   return line;
