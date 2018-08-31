@@ -28,11 +28,11 @@ function viewCart() {
   } else {
     for (let i = 0; i<cart.length; i++){
       if (i===0){
-        line += `${cart[i].item.itemName} at $${cart[i].item.itemPrice}`;
+        line += `${cart[i].itemName} at $${cart[i].itemPrice}`;
       } else if (i === cart.length-1) {
-        line += `, and ${cart[i].item.itemName} at $${cart[i].item.itemPrice}.`;
+        line += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
       } else {
-        line += `, ${cart[i].item.itemName} at $${cart[i].item.itemPrice}`;
+        line += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
     }
   }
