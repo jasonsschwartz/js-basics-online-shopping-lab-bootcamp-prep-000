@@ -23,7 +23,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var line = "In your cart, you have ";
-  if (cart.isEmpty()){
+  if (cart.length===0){
     return "Your shopping cart is empty.";
   } else {
     for (let i = 0; i<cart.length; i++){
