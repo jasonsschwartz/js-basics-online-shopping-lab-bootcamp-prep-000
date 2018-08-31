@@ -22,7 +22,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart.isempty)
+  if (cart.isEmpty()){
+    return ""
+  }
 }
 
 function total() {
