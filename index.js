@@ -34,8 +34,8 @@ function viewCart() {
       } else {
         line += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
-      line += ".";
     }
+    line += ".";
   }
   return line;
 }
