@@ -1,4 +1,5 @@
 var cart = [];
+var itemObj = new Object();
 
 function getCart() {
  return cart;
@@ -11,6 +12,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+  item = new Object();
+  item.itemName = `${item}`
+  item.itemPrice = 
 }
 
 function viewCart() {
