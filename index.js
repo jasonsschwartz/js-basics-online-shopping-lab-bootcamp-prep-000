@@ -31,9 +31,12 @@ function viewCart() {
         line += `${cart.item.itemName} at $${cart.item.itemPrice}`;
       } else if (i === cart.length-1) {
         line += `, and ${cart.item.itemName} at $${cart.item.itemPrice}.`;
+      } else {
+        line += `, ${cart.item.itemName} at $${cart.item.itemPrice}`;
       }
     }
   }
+  return line;
 }
 
 function total() {
